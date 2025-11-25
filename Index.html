@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#ff0033">
+
+  <title>Cyber Caesar Encryptor</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LOGO SKULL -->
+    <img src="icons/skull.png" class="skull" alt="Skull">
+
+    <h1 class="title glitch">CAESAR ENCRYPTOR</h1>
+
+    <label>Inserisci testo:</label>
+    <input type="text" id="inputText" placeholder="Scrivi qui...">
+
+    <label>Chiave (shift):</label>
+    <input type="number" id="shift" placeholder="3">
+
+    <button onclick="encrypt()">CRIPTA</button>
+
+    <div id="result" class="result"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

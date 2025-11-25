@@ -1,0 +1,20 @@
+{
+  "name": "Cyber Converter",
+  "short_name": "Converter",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff0000",
+  "icons": [
+    {
+      "src": "icons/skull.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/skull.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
